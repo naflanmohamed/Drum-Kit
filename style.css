@@ -37,6 +37,12 @@ div p{
     margin-top: 40px;
 }
 
+.credit a{
+    color: #ffeb3b;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
 .keys {
     display: flex;
     flex-wrap: wrap;
