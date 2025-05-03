@@ -16,6 +16,26 @@ body {
     padding: 20px;
 }
 
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffeb3b;
+}
+
+div p{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #9effef;
+}
+
+.credit{
+    font-size: 1rem;
+    text-align: center;
+    color: #ccc;
+    margin-top: 40px;
+}
 
 .keys {
     display: flex;
