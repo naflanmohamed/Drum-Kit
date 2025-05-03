@@ -10,11 +10,18 @@ function playSound(e) {
 function removeTransition(e) {
   if (e.propertyName !== "transform") return;
   console.log(e.propertyName);
-
   this.classList.remove("playing");
 }
 
 const keys = document.querySelectorAll(".key");
-keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
+keys.forEach((key) => {
+  key.addEventListener("transitionend", removeTransition);
+
+  // Add click event listener to each key
+  key.addEventListener("click", () => {
+    const keyCode = key.getAttribute("data-key");
+    playSound({ keyCode: keyCode });
+  });
+});
 
 window.addEventListener("keydown", playSound);
